@@ -12,21 +12,97 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
       font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
+
+    header {
+      padding: 2rem 2rem 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .title {
+      max-width: 70%;
+    }
+
     h1 {
-      font-size: 3rem;
-      font-weight: 400;
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 0.2rem 0 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #666;
+    }
+
+    .links {
+      text-align: right;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    .links a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h1>Ethan Olson</h1>
+  <header>
+    <div class="title">
+      <h1>Ethan Olson</h1>
+      <h2>Student · Researcher</h2>
+    </div>
+    <div class="links">
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h3>About Me</h3>
+      <p>
+        I’m a student and researcher with interests in space systems, control, and autonomous robotics. This site is a collection of my projects, writing, and academic work.
+      </p>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <p>Coming soon...</p>
+    </section>
+
+    <section>
+      <h3>Publications</h3>
+      <p>Coming soon...</p>
+    </section>
+  </main>
 </body>
 </html>
